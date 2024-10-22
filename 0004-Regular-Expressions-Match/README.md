@@ -1,36 +1,99 @@
-# 0003_regex_findall.py
+# Regex Match Demo in Python
 
-This script demonstrates the use of Python's `re.findall()` function to find all words in a given text that start with the letter "I".
+### regex_match.py
 
-## Description
-The script imports the `re` module (Python's regular expressions module) and uses `re.findall()` with the pattern `\bI\w+` to find all words that begin with the capital letter "I".
+This program demonstrates the use of the `re.match()` function in Python to perform pattern matching at the beginning of a string using regular expressions (regex). It provides multiple examples showing how `re.match` behaves under various scenarios such as matching characters, digits, case-insensitive strings, and more.
 
-- `\b` asserts a word boundary, ensuring we only match words starting with "I".
-- `I` matches the literal capital letter "I".
-- `\w+` matches one or more word characters following "I".
+## Examples Covered
 
-The script runs two examples to demonstrate the regex:
+The program covers the following use cases:
 
-1. Text: "The rain is happening in India"
-   - Expected output: `["India"]`
+1. **Basic Matching**:
+    - Check if the string starts with "Hello".
+    
+    ```python
+    re.match(r'Hello', 'Hello World')
+    ```
 
-2. Text: "The rain is happening in India and Ireland"
-   - Expected output: `["India", "Ireland"]`
+2. **No Match if Not at the Beginning**:
+    - Check for "World" at the start of the string, which fails because "Hello" comes first.
+    
+    ```python
+    re.match(r'World', 'Hello World')
+    ```
 
-## Usage
-To run the script, you need Python 3 installed on your system. You can execute it using the following command:
+3. **Using `^` to Enforce Start of String**:
+    - Match strings that start with specific characters like "H" or "He".
 
+    ```python
+    re.match(r'^H', 'Hello World')
+    ```
+
+4. **Matching Digits at the Start**:
+    - Find one or more digits at the beginning of the string.
+
+    ```python
+    re.match(r'\d+', '1234abc')
+    ```
+
+5. **Matching Alphanumeric Strings**:
+    - Match alphanumeric sequences such as "PythonIsGreat123".
+
+    ```python
+    re.match(r'[A-Za-z]+', 'PythonIsGreat123')
+    ```
+
+6. **Case-Insensitive Matching**:
+    - Ignore case when matching "hello" against "Hello World".
+
+    ```python
+    re.match(r'hello', 'Hello World', re.IGNORECASE)
+    ```
+
+7. **Using Quantifiers**:
+    - Match a specific number of characters using `{}` quantifiers.
+
+    ```python
+    re.match(r'\w{6}', 'abcde12345')
+    ```
+
+8. **Optional Characters (`?`)**:
+    - Match both "color" and "colour" using an optional character `u`.
+
+    ```python
+    re.match(r'colou?r', 'color')
+    ```
+
+9. **Matching Alphanumeric Strings and Special Characters**:
+    - Match alphanumeric strings and note that special characters are excluded.
+
+    ```python
+    re.match(r'[A-Za-z0-9]+', 'Python123!')
+    ```
+
+## Output
+
+Each example prints the result of the regex match as `True` or `False`, or prints the matched substring when applicable.
+
+For example:
 ```bash
-python 0003-regex-findall.py
+Match at the beginning of the string wity Hello
+True
+No Match if not at the beginning of the string with World
+False
+Using ^ to Match the Start
+Checking if the word starts with H
+True
+Checking if the word starts with He
+True
+Checking if the word starts with Hi
+False
+...
 ```
 
-## Example Output
-```
-['India']
-['India', 'Ireland']
-```
 
-## Dependencies
-- Python 3.x
-- `re` module (comes built-in with Python)
+---
+
+
+
 
