@@ -1,4 +1,4 @@
-# 0003-regex-findall.py
+# 0003_regex_findall.py
 
 This script demonstrates the use of Python's `re.findall()` function to find all words in a given text that start with the letter "I".
 
