@@ -43,7 +43,11 @@ print('Matching Digits at the Start with spaces')
 RESULT = re.match(r'[A-Za-z]+', 'Python Is Great123')
 print(RESULT.group())  # Output: 'Python', Reason : It finds and matches the substring 'Python' up to the first space ' ' because the space is not part of [A-Za-z].
 
+print('Case-Insensitive Matching')
+RESULT = re.match(r'hello', 'Hello World', re.IGNORECASE)
+print(bool(RESULT))  # Output: True
 
-
-
+print('Matching with Quantifiers')
+RESULT = re.match(r'\w{6}', 'abcde12345')
+print(result.group())  # Output: 'abcde1'
 
