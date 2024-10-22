@@ -14,4 +14,3 @@ print(bool(RESULT))  # Output: True
 # No Match if not at the beginning of the string
 RESULT = re.match(r'World', 'Hello World')
 print(bool(RESULT))  # Output: False
-
