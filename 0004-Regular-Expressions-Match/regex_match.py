@@ -30,3 +30,20 @@ print(bool(RESULT))  # Output: True
 print('Checking if the word starts with Hi')
 RESULT = re.match(r'^Hi', 'Hello World')
 print(bool(RESULT))  # Output: False
+
+print('Matching Digits at the Start')
+RESULT = re.match(r'\d+', '1234abc')
+print(RESULT.group())  # Output: '1234'
+
+print('Matching Digits at the Start')
+RESULT = re.match(r'[A-Za-z]+', 'PythonIsGreat123')
+print(RESULT.group())  # Output: 'PythonIsGreat'
+
+print('Matching Digits at the Start with spaces')
+RESULT = re.match(r'[A-Za-z]+', 'Python Is Great123')
+print(RESULT.group())  # Output: 'Python', Reason : It finds and matches the substring 'Python' up to the first space ' ' because the space is not part of [A-Za-z].
+
+
+
+
+
