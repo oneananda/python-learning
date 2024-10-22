@@ -1,10 +1,14 @@
+"""
+This program contains functions for performing regular expressions on strings.
+"""
+
 # 0003_regex_findall.py
 
 import re
-text = "The rain in happening in India"
-result = re.findall(r"\bI\w+", text)
-print(result)
+TEXT = "The rain in happening in India"
+RESULT = re.findall(r"\bI\w+", TEXT)
+print(RESULT)
 
 text = "The rain in happening in India and Ireland"
-result = re.findall(r"\bI\w+", text)
-print(result)
+RESULT = re.findall(r"\bI\w+", TEXT)
+print(RESULT)
