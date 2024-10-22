@@ -17,3 +17,10 @@ Original message: Random message!
 Lower case: random message!
 Upper case: RANDOM MESSAGE!
 ```
+
+### Explanation
+
+- `message = "Random message!"`: Initializes a variable `message` with the text "Random message!".
+- `print("Original message: " + message)`: Prints the original message.
+- `print("Lower case: " + message.lower())`: Converts the message to lowercase and prints it.
+- `print("Upper case: " + message.upper())`: Converts the message to uppercase and prints it.
