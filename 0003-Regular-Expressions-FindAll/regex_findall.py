@@ -9,6 +9,6 @@ TEXT = "The rain in happening in India"
 RESULT = re.findall(r"\bI\w+", TEXT)
 print(RESULT)
 
-text = "The rain in happening in India and Ireland"
+TEXT = "The rain in happening in India and Ireland"
 RESULT = re.findall(r"\bI\w+", TEXT)
 print(RESULT)
