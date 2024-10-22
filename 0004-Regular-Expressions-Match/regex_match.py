@@ -49,12 +49,12 @@ print(bool(RESULT))  # Output: True
 
 print('Matching with Quantifiers')
 RESULT = re.match(r'\w{6}', 'abcde12345')
-print(result.group())  # Output: 'abcde1'
+print(RESULT.group())  # Output: 'abcde1'
 
 print('Matching with Optional Characters (?)')
 RESULT = re.match(r'colou?r', 'color')
-print(result.group())  # Output: True
+print(RESULT.group())  # Output: True
 
 print('Matching Alphanumeric Strings')
 RESULT = re.match(r'[A-Za-z0-9]+', 'Python123!')
-print(result.group())  # Output: Python123
+print(RESULT.group())  # Output: Python123
