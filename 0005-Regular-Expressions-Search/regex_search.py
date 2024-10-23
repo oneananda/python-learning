@@ -31,3 +31,20 @@ print(bool(RESULT))  # Output: True
 
 RESULT = re.search(r'W.rld', 'Worrlds')
 print(bool(RESULT))  # Output: False
+
+print('* : Matches 0 or more repetitions of the preceding pattern')
+
+RESULT = re.search(r'ab*', 'a')
+print(bool(RESULT))  # Output: True
+
+"""
+Pattern r'ab*':
+
+The regular expression ab* is interpreted as:
+'a': Match the character 'a'.
+'b*': Match zero or more occurrences of the character 'b'.
+This means the pattern will match an 'a' followed by zero or more 'b' characters.
+"""
+
+RESULT = re.search(r'ab*', 'b')
+print(bool(RESULT))  # Output: False
