@@ -20,5 +20,3 @@ print('Searches for the word World! everywhere')
 
 RESULT = re.search(r'World', 'Hello World Welcome!')
 print(bool(RESULT))  # Output: True
-
-
