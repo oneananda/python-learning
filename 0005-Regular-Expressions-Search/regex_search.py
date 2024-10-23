@@ -20,3 +20,14 @@ print('Searches for the word World! everywhere')
 
 RESULT = re.search(r'World', 'Hello World Welcome!')
 print(bool(RESULT))  # Output: True
+
+print('. : Matches any character except newline')
+
+RESULT = re.search(r'W.rld', 'World')
+print(bool(RESULT))  # Output: True
+
+RESULT = re.search(r'W.rld', 'Worlds')
+print(bool(RESULT))  # Output: True
+
+RESULT = re.search(r'W.rld', 'Worrlds')
+print(bool(RESULT))  # Output: False
