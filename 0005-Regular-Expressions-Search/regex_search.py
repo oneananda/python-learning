@@ -46,3 +46,14 @@ print(bool(RESULT))  # Output: True
 
 RESULT = re.search(r'ab*', 'b')
 print(bool(RESULT))  # Output: False
+
+print('{} : Matches exactly the specified number of repetitions')
+
+RESULT = re.search(r'a{3}', 'aaa')
+print(bool(RESULT))  # Output: True
+
+RESULT = re.search(r'a{3}', 'aaaa')
+print(bool(RESULT))  # Output: True
+
+RESULT = re.search(r'a{3}', 'aab')
+print(bool(RESULT))  # Output: False
