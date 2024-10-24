@@ -65,3 +65,11 @@ print(bool(RESULT))  # Output: True
 
 RESULT = re.search(r'[abc]', 'xyz')
 print(bool(RESULT))  # Output: False
+
+print('| : Acts like an OR (matches one of the alternatives)')
+
+RESULT = re.search(r'cat|dog|parrot', 'I have a cat')
+print(bool(RESULT))  # Output: True
+
+RESULT = re.search(r'cat|dog|parrot', 'I have a zebra')
+print(bool(RESULT))  # Output: False
