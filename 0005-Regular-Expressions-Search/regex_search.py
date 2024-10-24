@@ -73,3 +73,14 @@ print(bool(RESULT))  # Output: True
 
 RESULT = re.search(r'cat|dog|parrot', 'I have a zebra')
 print(bool(RESULT))  # Output: False
+
+print('\d : Matches any digit (equivalent to [0-9])')
+
+RESULT = re.search(r'\d', 'Hello 123')
+print(bool(RESULT))  # Output: True
+
+RESULT = re.search(r'\d', 'Hello')
+print(bool(RESULT))  # Output: False
+
+
+
