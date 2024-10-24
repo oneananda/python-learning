@@ -74,7 +74,8 @@ print(bool(RESULT))  # Output: True
 RESULT = re.search(r'cat|dog|parrot', 'I have a zebra')
 print(bool(RESULT))  # Output: False
 
-print('Slash \d : Matches any digit (equivalent to [0-9])')
+print(r'\d : Matches any digit (equivalent to [0-9])')
+# Adding 'r' before the string as it contains backword slash d '\d'
 
 RESULT = re.search(r'\d', 'Hello 123')
 print(bool(RESULT))  # Output: True
