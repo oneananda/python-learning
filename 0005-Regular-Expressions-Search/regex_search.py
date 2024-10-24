@@ -57,3 +57,11 @@ print(bool(RESULT))  # Output: True
 
 RESULT = re.search(r'a{3}', 'aab')
 print(bool(RESULT))  # Output: False
+
+print('[] : Matches any one character within the brackets')
+
+RESULT = re.search(r'[abc]', 'apple')
+print(bool(RESULT))  # Output: True
+
+RESULT = re.search(r'[abc]', 'xyz')
+print(bool(RESULT))  # Output: False
