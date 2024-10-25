@@ -14,5 +14,8 @@ print(int_array)
 
 # Adding elements
 int_array.append(12)  # Append an element
-
 print("After appending:", int_array)
+
+# Removing elements
+int_array.remove(3)  # Remove an element
+print("After removing:", int_array)
