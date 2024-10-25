@@ -31,5 +31,3 @@ int_array = array.array('i', [2, 4, 6, 8, 10])
 # Alternatively, we can use `del`
 del int_array[1]  # Removes element at index 1 (2)
 print("After using del to remove element at index 1:", int_array)
-
-
