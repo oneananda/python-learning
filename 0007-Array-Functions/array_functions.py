@@ -33,4 +33,4 @@ del int_array[1]  # Removes element at index 1 (2)
 print("After using del to remove element at index 1:", int_array)
 
 # Accessing elements
-print("Element at index 1:", list_array[1])
+print("Element at index 1:", int_array[1])
