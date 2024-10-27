@@ -21,7 +21,7 @@ if AGE <= 18:
     print("You should be admitted to the Pediatric Department.")
 else:
     print("You should be admitted to the Adult Department.")
-print(f"======================================================")
+print("======================================================")
 print()
 
 print("If-else-with-multiple-lines-example")
@@ -48,7 +48,7 @@ elif MARKS >= 60:
     print("Grade: C")
 else:
     print("Grade: D")
-print(f"======================================================")
+print("======================================================")
 print()
 
 print("Nested if Statements example")
@@ -62,16 +62,16 @@ if NUMBER > 0:
 else:
     print("Negative number")
 
-print(f"======================================================")
+print("======================================================")
 print()
 
 print("Using Logical Operators example")
 
 AGE = 40
 
-has_id = True
+HAS_ID = True
 
-if AGE >= 18 and has_id:
+if AGE >= 18 and HAS_ID:
     print("You can enter the club, as your age is {AGE}.")
 else:
     print("Entry denied, as your age is {AGE}.")
