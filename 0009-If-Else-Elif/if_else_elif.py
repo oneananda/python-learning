@@ -62,3 +62,18 @@ else:
     print("Negative number")
 
 print(f"======================================================")
+
+
+print("Using Logical Operators example")
+
+AGE = 40
+
+has_id = True
+
+if AGE >= 18 and has_id:
+    print(f"You can enter the club, as your age is {AGE}.")
+else:
+    print(f"Entry denied, as your age is {AGE}.")
+
+
+print(f"======================================================")
