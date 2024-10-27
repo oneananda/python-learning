@@ -23,6 +23,17 @@ else:
     print("You should be admitted to the Adult Department.")
 print(f"======================================================")
 
+print(f"If-else-with-multiple-lines-example")
+print(f"Hospital admission when the age is {AGE}")
+
+if AGE <= 18:
+    print(f"Your age is {AGE}.")
+    print("You should be admitted to the Pediatric Department.")
+else:
+    print(f"Your age is {AGE}.")
+    print("You should be admitted to the Adult Department.")
+print(f"======================================================")
+
 print("if-elif-else example")
 
 print("elif = else if")
