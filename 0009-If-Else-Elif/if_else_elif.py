@@ -48,3 +48,17 @@ elif MARKS >= 60:
 else:
     print("Grade: D")
 print(f"======================================================")
+
+
+print("Nested if Statements example")
+
+NUMBER = 15
+if NUMBER > 0:
+    if NUMBER % 2 == 0:
+        print("Positive even number")
+    else:
+        print("Positive odd number")
+else:
+    print("Negative number")
+
+print(f"======================================================")
