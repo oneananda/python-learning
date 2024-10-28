@@ -24,7 +24,7 @@ print("======================================================")
 print("Using range() to Iterate Over Numbers - start")
 print()
 
-for i in range(10): 
+for i in range(10):
     print(i) # Print 10 numbers starting from 0 (0-9)
 
 print()
