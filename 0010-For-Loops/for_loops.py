@@ -36,8 +36,22 @@ COMMENT = "Iterating Over a String"
 print(f"{COMMENT} - start")
 print()
 
-for i in range(10):
-    print(i) # Print 10 numbers starting from 0 (0-9)
+for char in "Hello":
+    print(char)
+
+print()
+print(f"{COMMENT} - finish")
+print("======================================================")
+
+COMMENT = "Iterating Over a Dictionary"
+
+print(f"{COMMENT} - start")
+print()
+
+PERSON = {"name": "John", "age": 25, "city": "New York"}
+
+for key, value in PERSON.items():
+    print(key, ":", value)
 
 print()
 print(f"{COMMENT} - finish")
