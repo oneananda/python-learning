@@ -56,3 +56,19 @@ for key, value in PERSON.items():
 print()
 print(f"{COMMENT} - finish")
 print("======================================================")
+
+COMMENT = "Nested for Loop"
+
+print(f"{COMMENT} - start")
+print()
+
+for i in range(3):
+    for j in range(3):
+        print(f"i = {i}, j = {j}")
+
+print()
+print(f"{COMMENT} - finish")
+print("======================================================")
+
+
+
