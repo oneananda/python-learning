@@ -70,5 +70,22 @@ print()
 print(f"{COMMENT} - finish")
 print("======================================================")
 
+COMMENT = "Iterating Over a 2D List (Matrix)"
 
+print(f"{COMMENT} - start")
+print()
 
+MATRIX = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+for row in MATRIX:
+    for column in row:
+        print(column, end=" ")
+    print()  # New line after each row
+
+print()
+print(f"{COMMENT} - finish")
+print("======================================================")
